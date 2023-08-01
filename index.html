@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+    <!-- model -->
+    <script src="JS/model.js"></script>
+    <script src="JS/common.js"></script>
+
+    <!-- frontPage -->
+    <script src="JS/frontpage/frontPageView.js"></script>
+    <script src="JS/frontpage/frontPageController.js"></script>
+
+    <!-- blogPage -->
+    <script src="JS/blogpage/blogPageView.js"></script>
+    <script src="JS/blogpage/blogPageController.js"></script>
+
+    <!-- login -->
+    <script src="JS/loginpage/loginPageView.js"></script>
+    <script src="JS/loginpage/loginPageController.js"></script>
+
+    <!-- newUser -->
+    <script src="JS/newuserpage/newUserPageController.js"></script>
+    <script src="JS/newuserpage/newUserPageView.js"></script>
+
+    <!-- adminSider -->
+    <script src="JS/adminpage/adminPagePictureController.js"></script>
+    <script src="JS/adminpage/adminPagePictureView.js"></script>
+    <script src="JS/adminpage/adminPageBookingController.js"></script>
+    <script src="JS/adminpage/adminPageBookingView.js"></script>
+    <script src="JS/adminpage/adminPageComfortsController.js"></script>
+    <script src="JS/adminpage/adminPageComfortsView.js"></script>
+
+    <!-- bookingPage -->
+    <!-- controllerModal -->
+    <script src="JS/bookingpage/bookingPageControllerConfirmation.js"></script><!--  confirmasjonModalController -->
+    <script src="JS/bookingpage/bookingPageControllerComforts.js"></script><!--  ComfortsModalController -->
+    <script src="JS/bookingpage/bookingPageControllerPackage.js"></script><!--  packageModalController -->
+    <!-- controller -->
+    <script src="JS/bookingpage/bookingPageControllerCalendar.js"></script><!-- controller for  calendar -->
+    <script src="JS/bookingpage/bookingPageController.js"></script><!-- hoved controller -->
+    <!-- view -->
+    <script src="JS/bookingpage/bookingPageViewInput.js"></script><!--  input -->
+    <script src="JS/bookingpage/bookingPageViewGetClasses.js"></script><!-- hente css classer til calendar -->
+    <script src="JS/bookingpage/bookingPageViewCalendar.js"></script><!-- calendar og timepicker -->
+    <script src="JS/bookingpage/bookingPageView.js"></script><!-- hovedPage view -->
+
+    <title>Larvik Badstueutleie</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        updateView()
+        function updateView() {
+            let HTML = upperNavBar() + bottomNavBar();
+            let currentPage = model.app.currentPage
+            if (currentPage == 'frontPage') { HTML += updateFrontPageView(); }
+            if (currentPage == "bookingPage") { HTML += updateBookingPageView(); }
+            if (currentPage == "blogPage") { HTML += updateBlogPageView(); }
+            if (currentPage == 'loginPage') { HTML += updateLoginPageView(); }
+            if (currentPage == 'newUserPage') { HTML += updateUserPageView(); }
+            if (currentPage == 'adminPagePicture') { HTML += updateAdminPagePictureView(); }
+            if (currentPage == 'adminPageComfort') { HTML += updateAdminPageComfortView(); }
+            if (currentPage == 'adminPageBooking') { HTML += updateAdminPageBookingView(); }
+            document.getElementById('app').innerHTML = HTML;
+        }
+    </script>
+</body>
+
+</html>

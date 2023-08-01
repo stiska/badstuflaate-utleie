@@ -1,0 +1,874 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  background-color: #efe2cd;
+  font-family: 'Arvo', serif;
+}
+button{
+  font-family: 'Arvo', serif;
+  font-size:medium;
+  
+}
+input{
+  font-family: 'Arvo', serif;
+}
+
+
+.blog-wrapper{
+  padding-bottom: 50px;
+}
+
+.standard-img{
+  height: 300px;
+  width: 400px;
+  background-color: #add1ab;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: #a6cea4;
+}
+
+/* Login Styling*/
+.login-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  
+ 
+}
+
+.login-input-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 200px; 
+  width: 250px;
+  height: 200px;
+  justify-items: stretch;
+  background-color: #add1ab;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  padding: 30px;
+}
+.login-title{
+  margin: 5px;
+  padding: 5px;
+  justify-self: center;
+}
+/* Login Styling*/
+
+/* New-user Styling*/
+.new-user-container{
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 200px; 
+  width: 500px;
+  height: 400px;
+  justify-items: stretch;
+  align-items: center;
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  padding: 30px;
+}
+/* New-user Styling*/
+
+/* FrontPage Styling*/
+.frontpage-container{
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  justify-items: center;
+}
+
+.frontpage-picture-box {
+  margin-top: 50px;
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+}
+.frontpage-left-button{
+  justify-self: end;
+  width: 60px;
+  background-color: transparent;
+  border-color: transparent;
+  margin-right: 15%;
+  font-size: 100px;
+  color: rgb(173, 209, 171);
+}
+.frontpage-right-button{
+  justify-self: start;
+  width: 60px;
+  background-color: transparent;
+  border-color: transparent;
+  margin-left: 15%;
+  font-size: 100px;
+  color: rgb(173, 209, 171);
+}
+.front-page-images {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.frontpage-blog-and-stuff-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  margin-top: 20px;
+  height: 250px;
+
+}
+.frontpage-blog-preview-box{
+  height: 227px;
+  overflow: hidden;
+  margin-bottom: 100px;
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  padding: 10px;
+  margin: 0px;
+}
+.frontpage-Packages{
+  
+  margin-top: 100px;
+  padding: 20px;
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  width: 500px;
+  
+  align-items: center;
+}
+.frontpage-packages-wrapper{
+  display: flex;
+  justify-content: center;
+}
+/* FrontPage Styling*/
+
+/* Blogpage Styling*/
+.blogpage-container{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-items: center;
+    margin-bottom: 55px;
+}
+.mini-preview-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  min-height: 620px;
+  width: 100%;
+  justify-items: center;
+  
+}
+.blog-preview{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  max-width: 600px;
+  max-height: 290px;
+  overflow: hidden;
+  margin-top: 20px;
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+}
+.mini-preview-title{
+  grid-column: 1 / span 2;
+  justify-self: center;
+  padding: 10px;
+  margin: 10px;
+}
+.blog-text-mini-preview{
+  margin: 10px;
+  height: 190px;
+  overflow: hidden;
+}
+.mini-preview-img{
+  height: 200px;
+  width: 250px;
+  border-radius: 10%;
+}
+/* Blogpage Styling*/
+
+/*Modal Content Styling*/
+.blog-postcontent-sak{
+ display: grid;
+ grid-template-columns: 1fr;
+justify-items: center;
+}
+.editor-modal-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.input-modal-content-textarea{
+  margin: 15px;
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  height: 300px;
+  width: 815px;
+  border-color: #add1ab;
+  border-radius: 8px;
+}
+.input-modal-content-text{
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  border-color: #add1ab;
+  border-radius: 8px;
+}
+/*Modal Content Styling*/
+
+/* NavBar Top */
+.navbar-top {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: visible;
+  background-color: #8fb8c6;
+  height: 47px
+}
+
+.navbar-top a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar-top b {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #8fb8c6;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar-top b:hover, .dropdown:hover .dropbtn {
+  background-color: #acc1c9;
+ 
+}
+.navbar-top a:hover, .dropdown:hover .dropbtn {
+  background-color: #acc1c9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: white;
+  background-color: #8fb8c6;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* NavBar Top */
+
+/* NavBar Bottom */
+.navbar-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(9, 9, 9);
+    text-align: center;
+    background-color:#8fb8c6;
+    padding: 0px; 
+    height: 35px;
+    overflow: hidden;
+    
+    
+  }
+  .img {
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    margin: 0px;
+    
+  }
+  .navbar-bottom a:hover {
+    background-color: #acc1c9;
+  }
+  .navbar-bottom a {
+    text-decoration: none;
+    padding: 25px;
+    
+  }
+  .social-icon {
+    font-size: 10px;
+    
+  }
+/* NavBarBottom */
+
+/* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.textarea {
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 60%;
+}
+.img-selector-box {
+  height: 100px;
+  width: 100px;
+  border: solid;
+ 
+}
+
+.modal-content {
+  background-color: #c7d4bc;;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  height: 70%;
+  overflow-y: auto; /* Scroll enabled */
+
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: #a6cea4;
+  padding: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* -Modal Styling- */
+
+/* -AdminPage Styling- */
+.adminpage-wrapper {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+.adminpage-picture-box {
+  margin-top: 100px;
+  justify-self: center;
+  object-fit: fill;
+  height: 400px;
+  width: 1000px;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  overflow: hidden;
+}
+.adminpage-arraylist-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: stretch;
+  margin-top: 100px;
+  margin-right: 120px;
+  height: 380px;
+  padding: 10px;
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+}
+.admin-picturebox-subtitle-title{
+  grid-column: 1 / span 2;
+  justify-self: center;
+  padding: 5px;
+  margin: 5px;
+}
+/* -AdminPagePicture Styling- */
+
+/* -AdminPageComforts styling- */
+.adminpage-comforts-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  justify-items: center;
+}
+.adminpage-comforts-box-row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 300PX;
+  width: 600px; 
+  margin: 5px;
+  padding: 10px;
+  background-color: rgb(173, 209, 171);
+  overflow-wrap: normal;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+}
+.adminpage-comforts-box-row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 370px;
+  width: 600px;
+  margin: 5px;
+  padding: 10px;
+  background-color: rgb(173, 209, 171);
+  overflow-wrap: normal;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+}
+.admin-box-subtitle-title{
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin: 5px;
+  padding: 5px;
+}
+.admin-extra-produckt-inputbox{
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  margin-top: 15px;
+}
+.admin-package-inputbox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+}
+.admin-package-hour-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+}
+.admin-spann-button{
+  grid-column: 1 / span 2;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* -AdminPageComforts styling- */
+
+/* booking */
+/*  */
+.booking-wrapper{
+  padding-bottom: 50px;
+}
+
+.booking-container{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  column-gap: 30px; 
+  margin: 15px;
+}
+.col-1{
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+margin: 5px;
+}
+.col-2{
+display: flex;
+flex-direction: column;
+margin: 5px;
+} 
+.booking-subtitle{
+  grid-column: 1 / span 2;
+  justify-self: center;
+  max-height: 50px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 40px;
+}
+.booking-buttons{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  grid-column: 1 / span 2;
+  
+}
+.booking-order-overview{
+  grid-column: 1 / span 2;
+  justify-self: stretch;
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  padding: 10px;
+  padding-top: 25px;
+}
+
+.booking-calender{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+  min-width: 700px;
+  margin-top: 20px;
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  
+}
+
+.next-prew-month-buttons{
+  display: grid;
+  grid-column: 1 / span 2;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  width: 660px;
+}
+
+.claender-component{
+  grid-column: 1 / span 2;
+  justify-self: center;
+  width: 660px;
+  margin-bottom: 25px;
+}
+
+
+#blancTdBtn {
+  background-color: #999;
+  width: 100%;
+  height: 100%;
+}
+
+table, th, td {
+  border: 1px solid;
+  
+}
+table {
+  
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+td {
+  
+  height: 50px;
+  vertical-align: center;
+}
+
+.date-button {
+  width: 100%;
+  height: 100%;
+}
+
+.hour-button{
+  width: 100%;
+  height: 100%;
+}
+.un-selectable {
+  background-color: #bbb;
+  pointer-events: none;
+}
+.passed-day-button{
+  background-color: #cecece;
+  pointer-events: none;
+}
+.passed-hour-button{
+  background-color: #ddd;
+  pointer-events: none;
+}
+
+
+
+/* dato farger for okuperte tider */
+.red-button{
+  background-color: rgb(237, 104, 104);
+  pointer-events: none;
+}
+.light-red-button{
+  background-color: rgb(238, 158, 158);
+
+}
+.yellow-button{
+  background-color: rgb(254, 254, 108);
+}
+.green-button{
+  background-color: #92bac9;
+}
+/* kunde valgte timer  */
+.blue-button{
+  background-color: #92bac9;
+}
+.disabled-button{
+  background-color: lightcoral;
+}
+
+/*.package-table-name-price, tr, td{
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}*/
+
+table.package-table-name-price th{
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%; 
+  margin-top: 100px;
+}
+
+
+.package-table-comforts, tr, td{
+  border: none;
+  text-align: center;
+  
+}
+
+.outer-modal-content{
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: rgb(199, 212, 188);
+  
+}
+
+.inner-modal-content{
+  background-color: rgb(199, 212, 188);
+  border: none;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.booking-image{
+  width: 288px;
+  height: 162px;
+  border: solid;
+  border-width: 4px;
+  margin: 10px;
+  display: inline;
+}
+
+.booking-btn{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+ 
+  
+}
+.booking-table{
+  margin-bottom: 15px;
+}
+
+table.admin-booking-table{
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%;  
+}
+
+table.admin-booking-table td{
+  height: 50px;
+  vertical-align: center;
+  
+  
+}
+
+
+div.admin-booking-page{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+
+
+
+/*til admin-booking*/
+.admin-booking-page{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 60px;
+}
+.admin-booking-title{
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+.admin-booking-spanning-content{
+  grid-column: 1 / span 2;
+  
+}
+.green-button{
+  background-color: rgb(226, 204, 144);
+}
+.admin-month{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  height: 460px;
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  padding: 20px;
+  margin-top: 60px;
+}
+.booking-list{
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  margin: 20px;
+  padding: 20px;
+  height: 550px;
+  
+}
+
+.single-booking-list{
+  background-color: rgb(173, 209, 171);
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: rgb(199, 212, 188);
+  margin: 20px;
+  padding: 20px;
+  
+}
+.admin-booking-row-hjelp{
+  justify-content: center;
+  width: 270px;
+  height: 30px;
+}
+
+.booking-month-button{
+  width:100%;
+}
+/**/
+
+.comforts-modal-table{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid;
+  
+}
+
+.comforts-modal-table th td{
+  border: 1px solid;
+  
+}
+
+table.comforts-table{
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%; 
+  margin-top: 100px;
+}
+
+/* Scrollbar Styling*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:transparent;
+  border-color: transparent;
+  border-width: 2px;
+  border-radius: 50px;
+  height:20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(199, 212, 188);
+}
+
+
+
+
+/*pakke-velger knapp*/
+.choose-package-button{
+	width: 100%;
+}
